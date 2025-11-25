@@ -301,6 +301,7 @@
 			inputPaths = (
 				"$(SRCROOT)/.xcode.env",
 				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/keepr/keepr.entitlements",
 				"$(SRCROOT)/Pods/Target Support Files/Pods-keepr/expo-configure-project.sh",
 			);
 			name = "[Expo] Configure project";
@@ -334,6 +335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = keepr/keepr.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -353,11 +355,12 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = org.name.keepr;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cpse.keepr;
 				PRODUCT_NAME = keepr;
 				SWIFT_OBJC_BRIDGING_HEADER = "keepr/keepr-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -368,6 +371,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = keepr/keepr.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = keepr/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
@@ -382,10 +386,11 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = org.name.keepr;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cpse.keepr;
 				PRODUCT_NAME = keepr;
 				SWIFT_OBJC_BRIDGING_HEADER = "keepr/keepr-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;

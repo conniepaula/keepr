@@ -1,4 +1,4 @@
-package com.keepr
+package com.cpse.keepr
 
 import android.os.Build
 import android.os.Bundle
