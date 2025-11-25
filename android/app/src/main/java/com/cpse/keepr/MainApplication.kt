@@ -1,4 +1,4 @@
-package com.keepr
+package com.cpse.keepr
 
 import android.app.Application
 import android.content.res.Configuration
